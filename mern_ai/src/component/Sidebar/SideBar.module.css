@@ -1,0 +1,51 @@
+
+.sideBar{
+    flex:0.2;
+    background: linear-gradient(
+        180deg,
+        #0F082E 0%,
+        #2B1678 100%
+    );
+
+    color:white;
+    height:100vh;
+}
+
+.sideBarIcon{
+    padding:20px 30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.sideBarTopContent{
+    font-size:26px;
+}
+
+.sideBarOptionBlock{
+    margin-top:30px;
+}   
+
+.sideBarOption{
+    padding:20px;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    padding:12px 20px;
+    font-size:22px;
+    cursor:pointer;
+    color:white;
+    text-decoration:none;
+}
+
+.selectedOption{
+    background: linear-gradient(
+        90deg,
+        #7B3EFF 0%,
+        #FF4FA3 100%
+    );
+
+    border-radius:12px;
+    color:white;
+}
