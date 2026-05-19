@@ -6,7 +6,7 @@ const path = require("path");
 const { CohereClient } = require("cohere-ai");
 
 const cohere = new CohereClient({
-    token: "HZnCvc8UoAIbumIPKhQBgYcZAIyFDvecd7TsisJb",
+    token: process.env.COHERE_API_KEY
 
 });
 

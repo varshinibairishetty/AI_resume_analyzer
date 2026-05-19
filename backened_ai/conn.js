@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://varshinibairishetty_db_user:d1bnWZ7VJUH9rHb9@cluster0.myxqawz.mongodb.net/?appName=Cluster0').then((res) => {
+mongoose.connect(process.env.MONGO_URL).then((res) => {
     console.log("Database connected successfully")
 
 }).catch(err => {
