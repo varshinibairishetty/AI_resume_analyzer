@@ -5,6 +5,9 @@ const app = express();
 
 const PORT = 4000;
 
+require('dotenv').config();
+console.log("MONGO_URL:", process.env.MONGO_URL);
+
 require('./conn');
 
 app.use(express.json());
