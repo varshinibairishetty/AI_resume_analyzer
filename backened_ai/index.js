@@ -1,19 +1,15 @@
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
+
 const app = express();
-
-const PORT = 4000;
-
-require('dotenv').config();
-console.log("MONGO_URL:", process.env.MONGO_URL);
+const PORT = process.env.PORT || 4000;
 
 require('./conn');
 
 app.use(express.json());
 
 const allowedOrigins = [
-    process.env.FRONTEND_URL || "https://ai-resume-analyzer-ochre-three.vercel.app",
+    "https://ai-resume-analyzer-ochre-three.vercel.app",
     "http://localhost:5173"
 ];
 
