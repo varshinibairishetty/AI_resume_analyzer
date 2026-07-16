@@ -1,5 +1,5 @@
 
-import axios from '../../utils/axios';
+import axios from "axios";
 
 const instance = axios.create({
     baseURL: "https://ai-resume-analyzer-1-0l5v.onrender.com",
